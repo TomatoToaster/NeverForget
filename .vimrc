@@ -1,2 +1,6 @@
 " place in ~ directory
-color koehler
+set nobackup
+set nowritebackup
+set tabstop=4
+colorscheme koehler
+syntax on
