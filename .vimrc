@@ -1,7 +1,8 @@
 " place in ~ directory
 set nobackup 
 set nowritebackup
-set tabstop=4
+set noswapfile
+set tabstop=2
 colorscheme koehler
 syntax on
 set number
