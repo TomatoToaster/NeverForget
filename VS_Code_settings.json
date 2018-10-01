@@ -6,19 +6,22 @@
     "vim.useSystemClipboard": true,
     "vim.statusBarColorControl": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#5f0000",
-        "statusBar.noFolderBackground": "#5f0000",
-        "statusBar.debuggingBackground": "#5f0000"
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
     },
     "vim.autoindent": false,
-    "vim.normalModeKeyBindings": [
+    "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["x"], "after": ["\"", "_", "x"] },
+        { "before": ["<leader>", "d"], "after": ["\"", "_", "d"] }
     ],
-    "vim.visualModeKeyBindings": [
-        { "before": ["x"], "after": ["\"", "_", "x"] }
+    "vim.visualModeKeyBindingsNonRecursive": [
+        { "before": ["x"], "after": ["\"", "_", "x"] },
+        { "before": ["<leader>", "d"], "after": ["\"", "_", "d"] }
     ],
+    "vim.leader": " ",
     "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.outputDir": "../out/",
+    "latex-workshop.latex.outputDir": "../tex_out/",
     "latex-workshop.latex.recipes": [
         {
             "name": "latexmk",
