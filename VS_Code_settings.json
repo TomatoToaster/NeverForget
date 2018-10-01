@@ -21,7 +21,7 @@
     ],
     "vim.leader": " ",
     "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.latex.outputDir": "../tex_out/",
+    "latex-workshop.latex.outputDir": "../out/",
     "latex-workshop.latex.recipes": [
         {
             "name": "latexmk",
