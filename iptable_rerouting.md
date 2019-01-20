@@ -1,9 +1,9 @@
-# Rules for rerouting through iptables
-This will reroute port 80 to 3000 (remove sudo for when you put this in rc.local or something obviously):
+# How to get your nvm node into sudo
+These bash commands will make your current node directory (version nvm is using) to be accesible to sudo
 ```
-sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+n=$(which node); \
+n=${n%/bin/node}; \
+chmod -R 755 $n/bin/*; \
+sudo cp -r $n/{bin,lib,share} /usr/local
 ```
-This resets iptables rules apparently:
-```
-sudo iptables -F
-```
+[Credit from StackOverflow](https://stackoverflow.com/questions/21215059/cant-use-nvm-from-root-or-sudo)
