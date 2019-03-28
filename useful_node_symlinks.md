@@ -8,3 +8,11 @@ sudo ln -s -f "$(which npm)" "/usr/local/bin/npm"
 sudo ln -s -f "$(which npx)" "/usr/local/bin/npx"
 sudo ln -s -f "$(which forever)" "/usr/local/bin/forever"
 ```
+
+taken from https://stackoverflow.com/questions/21215059/cant-use-nvm-from-root-or-sudo
+```
+n=$(which node); \
+n=${n%/bin/node}; \
+chmod -R 755 $n/bin/*; \
+sudo cp -r $n/{bin,lib,share} /usr/local
+```
