@@ -27,7 +27,7 @@ Example crontab for user:
 Things I would typically put in that startupron.sh file:
 ```
 #!/bin/sh
-PATH=/home/amal/.nvm/versions/node/v11.14.0/bin:$PATH
+PATH=/home/username/.nvm/versions/node/v11.14.0/bin:$PATH
 forever stopall
 rm -rf /home/username/ProjectName
 cd /home/username
