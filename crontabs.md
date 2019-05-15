@@ -38,3 +38,4 @@ npm run build
 forever start server.js
 echo "startup script done"
 ```
+Don't forget to `chmod +x filename.sh` to make it an executable
