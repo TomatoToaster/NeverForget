@@ -1,4 +1,5 @@
 # How to get your nvm node into sudo
+*This is a bad idea, don't do this*
 These bash commands will symbolically link your current node tools (i.e. whatever version nvm has active) to `/usr/local/bin/` so that they will be accessible via sudo.
 
 The -f flag is there so that it will overwrite current symlinks in case you want to update the vesrion of the node tool being used.
