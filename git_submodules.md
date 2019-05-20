@@ -1,9 +1,9 @@
 # Git Submodules
 
-Typical flow in parent:
+After doing `git pull origin master` in the submodule directory of the parent and commiting that to the parent...
+
+Do this in the remote parent git directory:
 ```
 git pull
 git submodule update --recursive
 ```
-
-This is after doing `git pull origin master` in the submodule directory at beforehand in the commit of the parent directory
