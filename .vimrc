@@ -30,6 +30,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 " Vundle Plugin stuff ends
+
 " Don't forget to clone Vundle from their git repo
 
 set nobackup             
@@ -45,7 +46,7 @@ filetype on
 filetype plugin on       
 filetype indent on
 let mapleader=" "
-noremap x \_x
-noremap <leader>d \_d
+noremap x "_x
+noremap <leader>d "_d
 nnoremap <leader>o o<esc>
 nnoremap <leader>O O<esc>
