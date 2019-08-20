@@ -1,4 +1,4 @@
-# Global gitignore file
+# Global gitignore file: place this in the home directory
 # Make sure the git global config is looking out for this as an excludesfile
 # You can do that with git config --global core.excludesfile ~/.gitignore
 
