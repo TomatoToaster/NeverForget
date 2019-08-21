@@ -60,4 +60,5 @@
         }
     ],
     "vim.easymotion": true,
+    "search.followSymlinks": false,
 }
