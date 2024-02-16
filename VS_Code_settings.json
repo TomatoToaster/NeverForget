@@ -65,4 +65,5 @@
     "vim.easymotion": true,
     "search.followSymlinks": false,
     "files.insertFinalNewline": true,
+    "prettier.requireConfig": true
 }
