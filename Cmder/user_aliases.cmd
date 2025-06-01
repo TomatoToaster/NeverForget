@@ -1,5 +1,5 @@
-:: -- Copy paste what is below here this line
-:: Git aliases
+;= rem Copy below this line
+;= rem Git aliases
 gs=git status $*
 ga=git add $*
 gr=git reset $*
@@ -10,5 +10,6 @@ gco=git checkout $*
 gk=gitk --all &
 gx=gitx --all
 
-:: Generate lowercase UUID and copy to clipboard (Windows-style)
-uid=uuidgen | tr A-Z a-z | clip
+;= rem Generate lowercase UUID and copy to clipboard (Windows-style)
+uid=powershell -command "[guid]::NewGuid().ToString().ToLower() | Set-Clipboard"
+
