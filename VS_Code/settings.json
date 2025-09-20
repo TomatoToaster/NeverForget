@@ -9,7 +9,6 @@
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f"
     },
-    "vim.autoindent": false,
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["x"], "after": ["\"", "_", "x"] },
         { "before": ["<leader>", "d"], "after": ["\"", "_", "d"] },
