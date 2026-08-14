@@ -9,6 +9,15 @@
         "key": "ctrl+p",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },
+    {
+        "key": "browserback",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "browserforward",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
     }
 ]
-
