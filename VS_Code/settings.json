@@ -1,19 +1,21 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "editor.tabSize": 4,
-    "breadcrumbs.enabled": false,
     "vim.useSystemClipboard": true,
     "vim.statusBarColorControl": true,
     "workbench.colorCustomizations": {
         "statusBar.background": "#005f5f",
         "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["x"], "after": ["\"", "_", "x"] },
         { "before": ["<leader>", "d"], "after": ["\"", "_", "d"] },
         { "before": ["<leader>", "o"], "after": ["o", "<esc>"] },
-        { "before": ["<leader>", "O"], "after": ["O", "<esc>"] }
+        { "before": ["<leader>", "O"], "after": ["O", "<esc>"] },
+        { "before": ["<Tab>"], "commands": ["editor.action.inlineSuggest.commit"] },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         { "before": ["p"], "after": ["\"", "_", "d", "P"] },
@@ -22,7 +24,10 @@
     ],
     "vim.leader": " ",
     "vim.handleKeys": {
-        "<C-f>": false
+        "<C-f>": false,
+        "<C-p>": false,
+        "<C-l>": false,
+        "<C-S-l>": false,
     },
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.latex.outputDir": "../out/",
@@ -63,7 +68,6 @@
     ],
     "vim.easymotion": true,
     "search.followSymlinks": false,
-    "prettier.requireConfig": true,
     "terminal.integrated.profiles.windows": {
 
         "PowerShell": {
@@ -86,5 +90,16 @@
         "args": ["/k", "C:\\Cmder\\vendor\\init.bat"]
     }
     },
-    "terminal.integrated.defaultProfile.windows": "Cmder"
+    "terminal.integrated.defaultProfile.windows": "Cmder",
+    "files.exclude": {
+        "**/*.uid": true
+    },
+    "window.zoomLevel": 1,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "chat.disableAIFeatures": true,
+    "workbench.colorTheme": "Dark Modern",
+    "godotTools.lsp.serverPort": 6005,
+    "workbench.sideBar.location": "right",
+    "window.newWindowProfile": "Default",
 }
